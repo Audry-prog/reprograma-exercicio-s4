@@ -1,4 +1,19 @@
-const pokemons = 
+
+
+const numeros = [65,842,89,789,6,9]
+ for (let i = 0; i < numeros.length; i++)
+console.log(numeros [i])
+
+
+
+
+
+
+
+
+
+
+/*const pokemons = 
 [{
   id: 1,
   name: "Bulbasaur",
@@ -24,4 +39,4 @@ console.log(listaNomes)
 //a mesma coisa, com arrow function 
 let outraListaNomes = ''
 const nomesPokemonsArrow = pokemons.forEach(pokemon => outraListaNomes += `O pokemón ${pokemon.name} tem id ${pokemon.id}\n`)
-console.log(outraListaNomes)
+console.log(outraListaNomes)*/
