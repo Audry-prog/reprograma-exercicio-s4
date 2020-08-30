@@ -9,6 +9,7 @@
 // 2) Crie uma função que receba uma array de números inteiros e retorne a soma dos elementos.
 // Exemplo: recebendo [10,11,12] deve retornar 33
 
+
 // 3) Crie uma função que receba uma array de números inteiros e retorne outra array somente com os elementos maiores que 5.
 // Exemplo, recebendo [88,55,0,2,85,81,24,12] deve retornar [ 88, 55, 85, 81, 24, 12 ]
 

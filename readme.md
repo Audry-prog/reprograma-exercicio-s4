@@ -102,7 +102,7 @@ Vamos ver em seguida como fazer isso.
 
 ### Alterando arrays
 
-Podemos usar índices entre colchetes para definir/alterar/adicionar elementos a uma array. 
+Podemos usar índices entre colchetes para definir/alterar/adicionar elementos a uma array.
 
 ```js
 const arrayNums = [1, 4, 73, 55, 43]
