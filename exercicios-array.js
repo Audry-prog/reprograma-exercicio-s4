@@ -61,9 +61,39 @@ function maioresQueNumero(arr, num) {
 
 console.log(maioresQueNumero([88,55,0,2,85,81,24,12], 20))
 
-// 5) Crie uma função que receba uma array de números inteiros e retorne o maior número encontrado.
-// Exemplo: recebendo [56, 12, 168, 66] deve retornar 168
+// 5) // 5) Crie uma função que receba uma array de números inteiros e retorne o maior número encontrado.
+// Exemplo: receber [56, 12, 168, 66] deve retornar 168
 // EXTRA: Pesquisar uma maneira iniciar com o menor número possível (dica: não é zero)
+ 
+const numInteiros = [56, 12, 168, 66]
+
+function maiorNumero(arr) {
+  arrayOrdenado = arr.sort((a, b) => a - b)
+  let maior = arrayOrdenado[0]
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > maior) {
+      maior = arr[i]
+    }
+  }
+  return maior
+}
+
+console.log(maiorNumero(numInteiros))
 
 // 6) Crie uma função que receba uma array de números inteiros e retorne o menor valor e o maior valor da array, no seguinte formato: "o menor número é X e o maior número é Y".
 // Exemplo, recebendo [5, 37, 18, 59, 12, -5] a função deve retornar "o maior número é 59 e o menor número é -5"
+
+const numInteiros2 = [5, 37, 18, 59, 12, -5]
+
+function maiorEMenor(arr) {
+  arrayOrdenado = arr.sort((a, b) => a - b)
+  let maior = arrayOrdenado[0]
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > maior) {
+      maior = arr[i]
+    }
+  }
+  return `O maior número é ${maior} e o menor número é ${arrayOrdenado[0]}`
+}
+
+console.log(maiorEMenor(numInteiros2))
