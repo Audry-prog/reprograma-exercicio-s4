@@ -17,6 +17,59 @@
 // 5381579886310193
 // 5261400319746371
 
+const numeroCartao = [5555666677778884, 5485755481460022, 5141331902596939, 5381579886310193, 5261400319746371]
+
+
+function CheckCard(num) {
+  const array = num
+  const arrayCartao = []
+  const verificador = []
+  const invertendo = []
+  const multiplicador = []
+  const todososMultiplicados = []
+
+  for (let i = 0; i < num.length; i++) {
+
+    arrayCartao.push(num[i].toString().split(''))
+    verificador.push(arrayCartao[i].pop())
+    invertendo.push(arrayCartao[i].reverse())
+
+  }
+
+  for (let j = 0; j < invertendo.length; j++) {
+
+    for (let i = 0; i < invertendo[j].length; i++) {
+      if (i % 2 != 0) {
+        var mult = parseInt(invertendo[j][i]) * 2
+        if (mult < 9) {
+          multiplicador.push(mult)
+        } else {
+          var subtraido = mult - 9
+          multiplicador.push(subtraido)
+        }
+      }
+    }
+    const total = multiplicador.reduce((total, currentElment) => total + currentElment)
+    t = num[j].toString().split('')
+    verificadorFinal = t[t.length - 1]
+
+    totalSomado = total + parseInt(verificadorFinal)
+    todososMultiplicados.push(totalSomado)
+
+  }
+
+  for (let h = 0; h < todososMultiplicados.length; h++) {
+    if (todososMultiplicados[h] % 2 == 0) {
+      console.log("CARTAO VALIDO")
+    }
+    else {
+      console.log("CARTAO INVALIDO")
+    }
+  }
+}
+
+console.log(CheckCard(numeroCartao, 1))
+
 ///////////////////////
 
 // DESAFIO - saudar clientes
@@ -52,3 +105,24 @@ const baseClientes = {
     visitas: 3,
   },
 }
+const nomes = Object.keys(baseClientes)
+
+function saudarCliente(str) {
+
+  const cliente = nomes.indexOf(str)
+
+  if (cliente === -1) {
+    console.log(`Olá ${str}, é a primeira vez por aqui?`)
+  }
+
+  let visitaCliente = baseClientes[`${str}`].visitas
+
+  if (visitaCliente === 1) {
+    console.log(`Bem vinda, ${str}! Que bom que voltou!`)
+  } else if (visitaCliente > 1) {
+    console.log(`Bem vinda mais uma vez, ${str}!`)
+  }
+
+}
+
+saudarCliente('Paty')
