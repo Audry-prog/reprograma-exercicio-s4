@@ -1,17 +1,7 @@
-<<<<<<< HEAD
-
 
 const numeros = [65,842,89,789,6,9]
  for (let i = 0; i < numeros.length; i++)
 console.log(numeros [i])
-
-
-
-
-
-
-
-
 
 
 /*const pokemons = 
@@ -41,7 +31,6 @@ console.log(listaNomes)
 let outraListaNomes = ''
 const nomesPokemonsArrow = pokemons.forEach(pokemon => outraListaNomes += `O pokemón ${pokemon.name} tem id ${pokemon.id}\n`)
 console.log(outraListaNomes)*/
-=======
 // DICAS DE DEBUGAGEM PRA VIDA
 // sempre verificar o que a função espera receber
 // verificar colchetes, parênteses e chaves
@@ -148,4 +137,4 @@ console.log(objGato)
 // let outraListaNomes = ''
 // const nomesPokemonsArrow = pokemons.forEach(pokemon => outraListaNomes += `O pokemón ${pokemon.name} tem id ${pokemon.id}\n`)
 // console.log(outraListaNomes)
->>>>>>> f595b9d2faf55c657c2c884df595fece6e66a609
+

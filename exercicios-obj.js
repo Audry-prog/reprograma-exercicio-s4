@@ -8,14 +8,6 @@
 //   autoria: 'Lygia Fagundes Telles'
 // }
 
-<<<<<<< HEAD
-
-
-
-
-
-
-=======
 function objLivro(titulo, paginas, autoria) {
   return ({
     titulo, // mesma coisa que titulo: titulo
@@ -25,7 +17,6 @@ function objLivro(titulo, paginas, autoria) {
 }
 
 console.log(objLivro('Antes do Baile Verde', 234, 'Lygia Fagundes Telles'))
->>>>>>> f595b9d2faf55c657c2c884df595fece6e66a609
 
 // 2) Aproveite a função acima em outra função, que deve retornar a seguinte frase: "O livro XXXX foi escrito por XXX e tem XXX páginas". Você deve utilizar a função que já está pronta, e não reescrever a lógica dela dentro dessa nova função.
 

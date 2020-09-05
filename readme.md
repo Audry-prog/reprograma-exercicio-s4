@@ -25,7 +25,7 @@ Nessa aula veremos como trabalhar com quantidades maiores de dados ao mesmo temp
 
 ## Arrays
 
-O que acontece quando precisamos trabalhar com várias informações? 
+O que acontece quando precisamos trabalhar com várias informações?
 Por exemplo, por enquanto estamos fazendo cálculos ou operações com poucos dados, então podemos fazer:
 ```js
 let num1 = 3
@@ -55,7 +55,7 @@ A array é uma lista *ordenada*, isso significa que cada dado que está dentro d
 const numeros = [3, 45, 12, 456, 656, 3, 55, 2, 6, 888]
 ```
 
-Então podemos dizer que o número 12 está no **índice 2 da array `numeros`**. É muito importante lembrar sempre que a **a contagem começa a partir do índice zero**! 
+Então podemos dizer que o número 12 está no **índice 2 da array `numeros`**. É muito importante lembrar sempre que a **a contagem começa a partir do índice zero**!
 
 Então, se quisermos acessar determinado dado que está dentro da array, devemos dizer em qual índice ele se encontra, usando os colchetes para informar o número do índice:
 ```js
